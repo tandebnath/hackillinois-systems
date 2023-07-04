@@ -32,14 +32,6 @@ a {
   text-decoration: none;
 }
 
-input[type=number]::-webkit-inner-spin-button, 
-input[type=number]::-webkit-outer-spin-button { 
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    appearance: none;
-    margin: 0; 
-}
-
 h3 {
   font-size: 1.5rem;
   letter-spacing: -2%;
@@ -73,6 +65,16 @@ h1 {
   letter-spacing: 0.1em;
   font-weight: 600;
   color: var(--accent-content);
+}
+
+input::-webkit-inner-spin-button,
+input::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  //margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
 }
 
 @media screen and (max-width: 640px) {
