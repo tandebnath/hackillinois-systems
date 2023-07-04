@@ -1,0 +1,70 @@
+.input {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem 0 1rem;
+  column-gap: 0.5rem;
+  height: 100%;
+
+  > input {
+    border: 0;
+    outline: 0;
+    background-color: var(--neutral);
+    color: var(--neutral-content);
+    border-radius: 0.25rem;
+    padding: 0.5rem;
+  }
+
+  > button {
+    border: 0;
+    cursor: pointer;
+    background-color: transparent;
+    color: var(--primary);
+    width: 2rem;
+    height: 2rem;
+
+    .button_icon {
+      height: 2rem;
+      width: 2rem;
+    }
+  }
+}
+
+.table_container {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(auto, 1fr));
+  margin-bottom: 2rem;
+
+  thead,
+  tbody,
+  tr {
+    display: contents;
+  }
+
+  th {
+    position: sticky;
+    top: 0;
+    white-space: nowrap;
+    background-color: var(--base-100);
+    font-size: 1.125rem;
+    color: var(--primary-content);
+    padding: 1rem;
+    text-align: center;
+    cursor: default;
+  }
+
+  td {
+    padding: 1rem;
+    color: var(--base-content);
+    text-align: center;
+  }
+
+  tr:nth-child(even) td {
+    background-color: var(--base-200);
+  }
+}
+
+.icon {
+  vertical-align: text-top;
+  margin-left: 0.5rem;
+}

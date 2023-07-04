@@ -1,0 +1,111 @@
+:root {
+  --primary: #a5a6f6;
+  --primary-content: #ffffff;
+  --secondary: #f6a5cf;
+  --secondary-content: #ffffff;
+  --accent: #1fb2a5;
+  --accent-content: #c6c6c8;
+  --neutral: #2a323c;
+  --neutral-focus: #242b33;
+  --neutral-content: #a6adbb;
+  --base-100: #1d232a;
+  --base-200: #191e24;
+  --base-300: #15191e;
+  --base-content: #a6adbb;
+}
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+  font-size: 16px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0; 
+}
+
+h3 {
+  font-size: 1.5rem;
+  letter-spacing: -2%;
+  font-weight: 700;
+}
+
+h1 {
+  font-size: 4rem;
+  letter-spacing: -2%;
+  font-weight: 700;
+  // color: var(--secondary);
+  background-color: var(--secondary);
+  background-image: linear-gradient(45deg, var(--primary), var(--secondary));
+  background-size: 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  -moz-text-fill-color: transparent;
+}
+
+.body1 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--base-content);
+}
+
+.body2 {
+  font-size: 1.5rem;
+  letter-spacing: 0.1em;
+  font-weight: 600;
+  color: var(--accent-content);
+}
+
+@media screen and (max-width: 640px) {
+  html,
+  body {
+    font-size: 12px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  html,
+  body {
+    font-size: 14px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  html,
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (min-width: 1536px) {
+  html,
+  body {
+    font-size: 18px;
+  }
+}
